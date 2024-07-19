@@ -25,6 +25,7 @@ export const PROJECTS = [
       "Node.js",
       "MongoDB",
     ],
+    projectLink: "https://swasthyaraksha.onrender.com/",
   },
   {
     title: "Mess-Mate, A home cook locater Web Application.",
@@ -32,6 +33,7 @@ export const PROJECTS = [
     description:
       "A comprehensive platform developed to help people find home cooks near them, facilitate meal purchases for both parties, and manage their meals.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", , "Firebase"],
+    projectLink: "",
   },
 ];
 
