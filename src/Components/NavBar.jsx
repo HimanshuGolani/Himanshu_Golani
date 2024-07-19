@@ -11,6 +11,7 @@ const NavBar = () => {
 
       <div className="icons m-8 flex items-center justify-center gap-4 text-2xl">
         <a
+          className="p-2 rounded-full hover:bg-sky-700 hover:shadow-lg hover:shadow-sky-700 transition duration-300"
           href="https://www.linkedin.com/in/himanshu-golani-15a588261"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,11 +19,12 @@ const NavBar = () => {
           <FaLinkedin />
         </a>
         <a
+          className="p-2 rounded-full hover:bg-white hover:shadow-lg hover:shadow-white transition duration-300 group"
           href="https://github.com/HimanshuGolani"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaGithub className="group-hover:text-black transition duration-300" />
         </a>
       </div>
     </nav>
