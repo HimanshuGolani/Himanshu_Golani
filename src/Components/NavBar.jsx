@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <nav className="mb-15 flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between py-4">
       <div className="flex flex-shrink-0 items-center">
         <h4 className="text-3xl">HG</h4>
       </div>
