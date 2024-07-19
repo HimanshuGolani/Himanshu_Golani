@@ -16,7 +16,7 @@ export const PROJECTS = [
     title: "SwasthyaRaksha, A Health Data Management Platform.",
     image: Project1,
     description:
-      "In today's fast-paced world, efficient and secure management of health data is a significant challenge for both patients and healthcare providers. Traditional methods of storing medical records on paper or disparate digital systems lead to issues such as data fragmentation, lack of real-time access, and potential data loss. Patients often face difficulties in keeping track of their medical history, sharing essential health information with multiple doctors, and remembering upcoming appointments. Similarly, doctors struggle with accessing comprehensive patient histories during emergencies and managing patient data seamlessly.SwasthyaRaksha addresses these critical challenges by providing an integrated Health Data Management Platform that ensures efficient, secure, and user-friendly management of health records for both patients and healthcare providers.",
+      "A platform where users can store their medical data and share it with doctors. The most important feature is that users can create a health profile containing their medical information, which will be helpful for emergency treatment. This profile can only be searched by doctors, and the logs will be shown to the user.",
     technologies: [
       "HTML",
       "CSS",

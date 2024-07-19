@@ -1,10 +1,23 @@
 import { PROJECTS } from "../Contents/content";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
-    <div className="border-b border-white-900 pb-4">
-      <h2 className="my-20 text-center text-4xl">Projects</h2>
-      <div className="">
+    <motion.div
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ x: -100, opacity: 0 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+      className="border-b border-white-900 pb-4"
+    >
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ y: -100, opacity: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="my-20 text-center text-4xl"
+      >
+        Projects
+      </motion.h2>
+      <div>
         {PROJECTS.map((item, index) => (
           <div key={index} className="mb-8 flex flex-wrap  lg:justify-center">
             <div className="w-full lg:w-1/4">
@@ -13,7 +26,10 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <motion.img
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ x: -100, opacity: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
                   className="mb-6 rounded"
                   src={item.image}
                   width={350}
@@ -22,7 +38,12 @@ const Project = () => {
                 />
               </a>
             </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ x: -700, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <h6 className="mb-2 font-semibold">{item.title}</h6>
               <p className="mb-4 text-neutral-400">{item.description}</p>
               <div className="mb-4">
@@ -43,11 +64,11 @@ const Project = () => {
               >
                 View Project
               </a>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
