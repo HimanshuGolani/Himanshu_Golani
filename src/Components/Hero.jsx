@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { HERO_CONTENT } from "../Contents/content";
+import TextEffect from "./TextEffect";
 
 const Hero = () => {
+  const MY_NAME = " Himanshu Golani".split("");
+
   return (
     <motion.div
       whileInView={{ opacity: 1, x: 0 }}
@@ -18,7 +21,9 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="pb-12 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Himanshu Golani
+              {MY_NAME.map((letter, index) => (
+                <TextEffect key={index}>{letter}</TextEffect>
+              ))}
             </motion.h1>
           </div>
           <motion.span
