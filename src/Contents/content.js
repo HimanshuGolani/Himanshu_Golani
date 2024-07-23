@@ -33,7 +33,7 @@ export const PROJECTS = [
     description:
       "A comprehensive platform developed to help people find home cooks near them, facilitate meal purchases for both parties, and manage their meals.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", , "Firebase"],
-    projectLink: "",
+    projectLink: "https://messmate-eydv.onrender.com/",
   },
 ];
 
